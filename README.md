@@ -26,7 +26,7 @@ This project aims to **automate traffic enforcement** using AI.
 
 ---
 
-## System Workflow
+## ⚙️ System Workflow
 
 ```mermaid
 flowchart LR
@@ -39,6 +39,7 @@ flowchart LR
   E --> F[Transmit to Server / Log DB]
   F --> G[Dashboard / Violation Reports]
   D -- No --> H[Continue Monitoring]
+
 
 ---
 
