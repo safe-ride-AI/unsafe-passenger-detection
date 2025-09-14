@@ -22,26 +22,10 @@ In many developing regions across South Asia and Africa, public transport vehicl
 Current monitoring is **manual, inconsistent, and not scalable**.  
 This project aims to **automate traffic enforcement** using AI.
 
-> According to the WHO, 1.3 million people die annually in road crashes, and overloading is a major contributor in developing countries.
 
 ---
 
-## ⚙️ System Workflow
 
-```mermaid
-flowchart LR
-  A[Traffic Camera (Law Enforcement)] --> B[Frame Capture]
-  B --> C[Deep Learning Pipeline]
-  C --> C1[Vehicle Detection]
-  C1 --> C2[Overloading Classification]
-  C2 --> D{Is Overloaded?}
-  D -- Yes --> E[Capture Evidence (image, time, location)]
-  E --> F[Transmit to Server / Log DB]
-  F --> G[Dashboard / Violation Reports]
-  D -- No --> H[Continue Monitoring]
-
-
----
 
 ## Project Structure
 safe-ride-AI/
