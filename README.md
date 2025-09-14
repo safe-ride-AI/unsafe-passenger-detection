@@ -40,6 +40,8 @@ flowchart LR
   F --> G[Dashboard / Violation Reports]
   D -- No --> H[Continue Monitoring]
 
+---
+
 ## Project Structure
 safe-ride-AI/
 │── data/             # Collected traffic videos & frames
@@ -54,6 +56,7 @@ safe-ride-AI/
 │── requirements.txt     # Dependencies
 │── README.md             # Project overview
 
+---
 
 ## Dataset Plan
 
@@ -65,6 +68,7 @@ Chingchis
   Collect at least 1000 images per class
   Capture various lighting, weather, and angles
   Annotate using CVAT / LabelImg in YOLO format
+---
 
 ## Tech Stack
 
@@ -74,6 +78,8 @@ Chingchis
   FastAPI / Flask – backend for model + API
   Flutter – dashboard front end
   CVAT / LabelImg / Roboflow – dataset annotation
+
+---
 
 ## Project Goals
 **FYP-1 (Fall 2025)**
@@ -86,6 +92,8 @@ Chingchis
   Build dashboard and backend
   Deploy and test full system
 
+---
+
 ## Project Timeline
 
 | Phase                      | Duration                 |
@@ -93,12 +101,16 @@ Chingchis
 | FYP-1: Sep 2025 – Dec 2025 | Data + Model Development |
 | FYP-2: Jan 2026 – May 2026 | Integration + Deployment |
 
+---
+
 ## Expected Outcomes
 
   Detect overloaded vehicles in real time from roadside cameras
   Automatic logging of violations (image, time, location)
   Interactive dashboard for law enforcement
   Help reduce road accidents and support smart city initiatives
+
+---
 
 ## License
 This project is developed for academic purposes under the FAST-NUCES Final Year Project 2025–26.
