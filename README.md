@@ -1,5 +1,5 @@
 # SafeRide AI  
-**Image-based Real-Time Passenger Vehicle Overloading Detection using Deep Learning**
+**Image-based Real-Time Passenger Vehicle Overcrowded Detection using Deep Learning**
 
 ---
 
@@ -9,15 +9,16 @@
 
 This system uses roadside CCTV camera feeds to:
 - Detect public transport vehicles
-- Identify overloaded or unsafe passenger behaviors
-- Capture violation evidence (image, time, location)
+- Identify overcrowded or unsafe passenger behaviors
+- Capture violation evidence (number plate, image, time, location)
+- Estimate number of people unsafe (hanging + sitting on roof)
 - Log violations to a server and display them on a dashboard
 
 ---
 
 ## Motivation
 
-In many developing regions across South Asia and Africa, public transport vehicles are often dangerously overloaded. Passengers frequently hang outside or ride on rooftops, leading to severe accidents and fatalities.
+In many developing regions across South Asia and Africa, public transport vehicles are often dangerously overcrowded. Passengers frequently hang outside or ride on rooftops, leading to severe accidents and fatalities.
 
 Current monitoring is **manual, inconsistent, and not scalable**.  
 This project aims to **automate traffic enforcement** using AI.
