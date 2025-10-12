@@ -91,8 +91,8 @@ Chingchis
 
 ## Expected Outcomes
 
-  Detect overloaded vehicles in real time from roadside cameras
-  Automatic logging of violations (image, time, location)
+  Detect overcrowded vehicles in real time from roadside cameras
+  Automatic logging of violations (number plate, image, time, location)
   Interactive dashboard for law enforcement
   Help reduce road accidents and support smart city initiatives
 
@@ -100,5 +100,3 @@ Chingchis
 
 ## License
 This project is developed for academic purposes under the FAST-NUCES Final Year Project 2025–26.
-
-
