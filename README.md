@@ -97,4 +97,5 @@ The project is divided into two academic semesters, each with clear objectives.
 -----
 ## License
 
-This project is developed for academic purposes under the **FAST-NUCES Final Year Project 2025–26**
+This project is licensed under the MIT License, see the LICENSE file for details.
+This project is also developed for academic purposes under the FAST-NUCES Final Year Project 2025–26.
