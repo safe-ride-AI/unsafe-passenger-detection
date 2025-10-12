@@ -13,6 +13,9 @@ The system shall capture and send the following parameters for each detected vio
 ## FR3 — Violation Management
 The admin shall be able to **view** all overcrowded vehicle violations on the dashboard.
 
+## FR4 - Search Voilation
+The admin shall be able to **Search** all overcrowded vechicle voilations on the dashboard.
+
 ## FR4 — Violation Filtering
 The admin shall be able to **filter** recorded violations by:
 - Date/time range  
