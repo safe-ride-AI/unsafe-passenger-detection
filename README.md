@@ -41,6 +41,7 @@ safe-ride-AI/
 ├── docs/         # Reports, presentations
 ├── requirements.txt
 └── README.md
+
 ---
 
 ## Dataset Plan
