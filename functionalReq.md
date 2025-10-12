@@ -10,17 +10,24 @@ The system shall capture and send the following parameters for each detected vio
 - GPS location (or camera location)
 - Detected vehicle’s number plate (if visible)
 
-## FR3 — Violation Management
+## FR3 - Voilation Data Storage
+The system shall store all detected overcrowded vehicle violation data in a persistent database, including:
+- Snapshot of the violation
+- Timestamp of detection
+- GPS or camera location
+- Vehicle number plate (if visible)
+
+## FR4 — Violation Management
 The admin shall be able to **view** all overcrowded vehicle violations on the dashboard.
 
-## FR4 - Search Voilation
+## FR5 - Search Voilation
 The admin shall be able to **Search** all overcrowded vechicle voilations on the dashboard.
 
-## FR4 — Violation Filtering
+## FR6 — Violation Filtering
 The admin shall be able to **filter** recorded violations by:
 - Date/time range  
 - Location  
 - Vehicle Number Plate
 
-## FR5 — Violation Deletion
+## FR7 — Violation Deletion
 The admin shall be able to **delete** specific overcrowded vehicle violation records from the dashboard.
