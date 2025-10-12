@@ -30,18 +30,17 @@ This project aims to **automate traffic enforcement** using AI.
 
 ## Project Structure
 safe-ride-AI/
-│── data/             # Collected traffic videos & frames
-│── labels/           # YOLO annotations
-│── src/               # Source code
+├── data/         # Collected traffic videos & frames
+├── labels/       # YOLO annotations
+├── src/          # Source code
 │   ├── preprocess.py
 │   ├── train.py
-│   ├── detect.py
-│── notebooks/         # Experiments and model training notebooks
-│── results/            # Sample outputs & model results
-│── docs/                # Reports, presentations
-│── requirements.txt     # Dependencies
-│── README.md             # Project overview
-
+│   └── detect.py
+├── notebooks/    # Experiments and model training notebooks
+├── results/      # Sample outputs & model results
+├── docs/         # Reports, presentations
+├── requirements.txt
+└── README.md
 ---
 
 ## Dataset Plan
