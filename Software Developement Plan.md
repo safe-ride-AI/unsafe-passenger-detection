@@ -14,7 +14,7 @@ The project team consists of three members who collectively handle development, 
 | Member | Role | Responsibility |
 |---------|------|----------------|
 | **Hamza** | **AI & System Integration Developer** | Leads development of the AI detection model for overcrowded vehicles, integrates it with backend services, and ensures smooth data flow to the dashboard. |
-| **Abdullah Amir** | **Backend & Database Developer** | Implements Firebase/Node.js backend, manages Firestore database operations, and develops APIs for data retrieval and storage. |
+| **Abdullah Amir** | **Backend & Database Developer** | Implements backend, manages database operations, and develops APIs for data retrieval and storage. |
 | **Mustafa** | **Frontend & Dashboard Developer (UI/UX)** | Designs and develops the Flutter-based admin dashboard, ensuring features like viewing, searching, filtering, and deleting violation records work effectively. |
 
 > *Each member also contributes to testing and documentation during their respective modules.*
