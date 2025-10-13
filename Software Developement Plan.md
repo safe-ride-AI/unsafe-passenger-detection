@@ -9,8 +9,6 @@ This Software Development Plan defines the approach, tools, team roles, and proc
 
 ## 2. Project Organization
 
-## 2. Project Organization
-
 The project team consists of three members who collectively handle development, testing, and deployment tasks. Their roles and responsibilities are defined below:
 
 | Member | Role | Responsibility |
