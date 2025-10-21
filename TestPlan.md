@@ -1,4 +1,4 @@
-# 🧾 Test Plan Document
+# Test Plan Document
 
 ## 1. Test Plan ID
 **TP-OVD-01**
