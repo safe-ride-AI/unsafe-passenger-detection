@@ -44,13 +44,13 @@ It ensures scalability, modularity, and maintainability, allowing each layer to 
 
 ## 3. System Architecture Diagram
 
-[ Admin Dashboard ] ← Presentation Layer
-        |
-        v
-[ Backend Server ] ←→ [ Detection Module ] ← Application Layer
-        |
-        v
-[ Database ] ← Data Layer
+[ Admin Dashboard ] ← Presentation Layer   
+        |   
+        v    
+[ Backend Server ] ←→ [ Detection Module ] ← Application Layer     
+        |    
+        v    
+[ Database ] ← Data Layer       
 
 
 
