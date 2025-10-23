@@ -5,20 +5,8 @@ The system shall capture and stream **real-time video feeds** from fixed surveil
 
 ---
 
-## FR2 — Overcrowded Vehicle Detection
-The system shall detect **overcrowded public transport vehicles** using real-time CCTV camera feeds.
-
----
-
-## FR3 — Person Detection and Counting
-The system shall:
-- Detect **all persons** outside of the vehicle (e.g., standing passengers on sides, roof passengers).  
-- **Count the total number of detected persons** for vehicle.
-
----
-
-## FR4 — Vehicle Type Detection (Triggered After Overcrowding)
-For vehicles marked as overcrowded, the system shall determine the **type of vehicle**, such as:
+## FR2 — Vehicle Type Detection
+For each detected vehicle, the system shall determine the **type of vehicle**, such as:
 - Bus  
 - Suzuki pickup  
 - Chingchi  
@@ -26,8 +14,22 @@ For vehicles marked as overcrowded, the system shall determine the **type of veh
 
 ---
 
+## FR3 — Person Detection and Counting
+The system shall:
+- Detect **persons outside of the vehicle** (e.g., standing passengers on sides or rooftop passengers).  
+- **Count the total number of detected persons** for each vehicle.  
+**Note:** Person count is an estimated count due to camera resolution and occlusion.
+
+---
+
+## FR4 — Overcrowding Check
+
+The system shall determine whether a detected vehicle is overcrowded based on a predefined person count threshold.
+If the number of persons detected outside the vehicle exceeds the threshold, the vehicle shall be considered overcrowded.
+Overcrowding status shall trigger subsequent processes, including number plate detection and violation data capture.
+
 ## FR5 — Number Plate Detection and Recognition
-After identifying the overcrowded vehicle and its type, the system shall:
+After identifying an **overcrowded vehicle** and its type, the system shall:
 - Detect the **vehicle’s number plate region**.  
 - Extract the **vehicle registration number**.
 
@@ -45,12 +47,12 @@ For each detected overcrowding violation, the system shall capture:
 ---
 
 ## FR7 — Violation Data Transmission
-The system shall securely **transmit all violation data** to the central **admin dashboard**.
+The system shall securely **transmit all violation data**.
 
 ---
 
 ## FR8 — Violation Data Storage
-The system shall store all detected violations in a **persistent database**, including all associated metadata (snapshot, timestamp, person count, location, vehicle type and number plate).
+The system shall store all detected violations in a **persistent database**, including all associated metadata (snapshot, timestamp, person count, location, vehicle type, and number plate).
 
 ---
 
@@ -81,7 +83,7 @@ The admin shall be able to **view detailed information** of a specific violation
 ---
 
 ## FR13 — Delete Violation Records
-The admin shall be able to **delete** violation records from the database via the dashboard.
+The admin shall be able to **delete violation records** from the database via the dashboard.
 
 ---
 
