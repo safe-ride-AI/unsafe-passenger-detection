@@ -14,7 +14,12 @@ For each detected vehicle, the system shall determine the **type of vehicle**, s
 
 ---
 
-## FR3 — Person Detection and Counting
+## FR3 — UnSafePassenger Vehicle Detection
+The system shall determine whether a detected vehicle is Unsafe or Safe
+
+---
+
+## FR4 — Person Detection and Counting
 The system shall:
 - Detect **persons outside of the vehicle** (e.g., standing passengers on sides or rooftop passengers).  
 - **Count the total number of detected persons** for each vehicle.  
@@ -22,11 +27,6 @@ The system shall:
 
 ---
 
-## FR4 — Overcrowding Check
-
-The system shall determine whether a detected vehicle is overcrowded based on a predefined person count threshold.
-If the number of persons detected outside the vehicle exceeds the threshold, the vehicle shall be considered overcrowded.
-Overcrowding status shall trigger subsequent processes, including number plate detection and violation data capture.
 
 ## FR5 — Number Plate Detection and Recognition
 After identifying an **overcrowded vehicle** and its type, the system shall:
