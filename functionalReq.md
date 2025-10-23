@@ -1,33 +1,89 @@
 # Functional Requirements
 
-## FR1 — Overcrowded Vehicle Detection
-The system shall detect **overcrowded public transport vehicles** (e.g., buses, Suzuki pickups, chingchis) using real-time CCTV camera feeds.
+## FR1 — Real-Time Camera Feed Acquisition
+The system shall capture and stream **real-time video feeds** from fixed surveillance cameras for continuous monitoring of vehicles.
 
-## FR2 — Violation Data Capture
-The system shall capture and send the following parameters for each detected violation to the admin dashboard:
-- Snapshot of the violation
-- Timestamp of detection
-- GPS location (or camera location)
-- Detected vehicle’s number plate (if visible)
+---
 
-## FR3 - Voilation Data Storage
-The system shall store all detected overcrowded vehicle violation data in a persistent database, including:
-- Snapshot of the violation
-- Timestamp of detection
-- GPS or camera location
+## FR2 — Overcrowded Vehicle Detection
+The system shall detect **overcrowded public transport vehicles** using real-time CCTV camera feeds.
+
+---
+
+## FR3 — Person Detection and Counting
+The system shall:
+- Detect **all persons** outside of the vehicle (e.g., standing passengers on sides, roof passengers).  
+- **Count the total number of detected persons** for vehicle.
+
+---
+
+## FR5 — Vehicle Type Detection (Triggered After Overcrowding)
+For vehicles marked as overcrowded, the system shall determine the **type of vehicle**, such as:
+- Bus  
+- Suzuki pickup  
+- Chingchi  
+
+
+---
+
+## FR6 — Number Plate Detection and Recognition
+After identifying the overcrowded vehicle and its type, the system shall:
+- Detect the **vehicle’s number plate region**.  
+- Extract the **vehicle registration number**.
+
+---
+
+## FR7 — Violation Data Capture
+For each detected overcrowding violation, the system shall capture:
+- Snapshot of the overcrowded vehicle  
+- Timestamp of detection  
+- GPS or camera location  
+- Total person count  
+- Vehicle type  
 - Vehicle number plate (if visible)
 
-## FR4 — Violation Management
-The admin shall be able to **view** all overcrowded vehicle violations on the dashboard.
+---
 
-## FR5 - Search Voilation
-The admin shall be able to **Search** all overcrowded vechicle voilations on the dashboard.
+## FR8 — Violation Data Transmission
+The system shall securely **transmit all violation data** to the central **admin dashboard**.
 
-## FR6 — Violation Filtering
-The admin shall be able to **filter** recorded violations by:
-- Date/time range  
+---
+
+## FR9 — Violation Data Storage
+The system shall store all detected violations in a **persistent database**, including all associated metadata (snapshot, timestamp, person count, location, vehicle type and number plate).
+
+---
+
+## FR10 — Admin Dashboard
+The system shall provide an admin dashboard that allows authorized personnel to:
+- View all recorded violations  
+- Display snapshots, timestamps, person counts, vehicle type, and location  
+
+---
+
+## FR11 — Search Functionality
+The admin shall be able to **search violations** based on:
+- Vehicle number plate  
+
+---
+
+## FR12 — Filter Functionality
+The admin shall be able to **filter violations** based on:
 - Location  
-- Vehicle Number Plate
+- Date/time range  
+- Vehicle type
 
-## FR7 — Violation Deletion
-The admin shall be able to **delete** specific overcrowded vehicle violation records from the dashboard.
+---
+
+## FR13 — View Violation Details
+The admin shall be able to **view detailed information** of a specific violation, including all metadata and snapshot.
+
+---
+
+## FR14 — Delete Violation Records
+The admin shall be able to **delete** violation records from the database via the dashboard.
+
+---
+
+## FR16 — User Authentication
+The system shall require **login credentials** for admin access to the dashboard.
