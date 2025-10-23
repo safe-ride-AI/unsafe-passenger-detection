@@ -15,7 +15,8 @@ For each detected vehicle, the system shall determine the **type of vehicle**, s
 ---
 
 ## FR3 — UnSafePassenger Vehicle Detection
-The system shall determine whether a detected vehicle is Unsafe or Safe
+The system shall determine whether a detected vehicle is Unsafe or Safe.
+A vehicle classified as unsafe based on passenger Standing outside or Sitting/Standing on roofTops. 
 
 ---
 
@@ -36,7 +37,7 @@ After identifying an **overcrowded vehicle** and its type, the system shall:
 ---
 
 ## FR6 — Violation Data Capture
-For each detected overcrowding violation, the system shall capture:
+For each detected violation, the system shall capture:
 - Snapshot of the overcrowded vehicle  
 - Timestamp of detection  
 - GPS or camera location  
