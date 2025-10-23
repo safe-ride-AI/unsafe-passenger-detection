@@ -17,7 +17,7 @@ The system shall:
 
 ---
 
-## FR5 — Vehicle Type Detection (Triggered After Overcrowding)
+## FR4 — Vehicle Type Detection (Triggered After Overcrowding)
 For vehicles marked as overcrowded, the system shall determine the **type of vehicle**, such as:
 - Bus  
 - Suzuki pickup  
@@ -26,14 +26,14 @@ For vehicles marked as overcrowded, the system shall determine the **type of veh
 
 ---
 
-## FR6 — Number Plate Detection and Recognition
+## FR5 — Number Plate Detection and Recognition
 After identifying the overcrowded vehicle and its type, the system shall:
 - Detect the **vehicle’s number plate region**.  
 - Extract the **vehicle registration number**.
 
 ---
 
-## FR7 — Violation Data Capture
+## FR6 — Violation Data Capture
 For each detected overcrowding violation, the system shall capture:
 - Snapshot of the overcrowded vehicle  
 - Timestamp of detection  
@@ -44,30 +44,30 @@ For each detected overcrowding violation, the system shall capture:
 
 ---
 
-## FR8 — Violation Data Transmission
+## FR7 — Violation Data Transmission
 The system shall securely **transmit all violation data** to the central **admin dashboard**.
 
 ---
 
-## FR9 — Violation Data Storage
+## FR8 — Violation Data Storage
 The system shall store all detected violations in a **persistent database**, including all associated metadata (snapshot, timestamp, person count, location, vehicle type and number plate).
 
 ---
 
-## FR10 — Admin Dashboard
+## FR9 — Admin Dashboard
 The system shall provide an admin dashboard that allows authorized personnel to:
 - View all recorded violations  
 - Display snapshots, timestamps, person counts, vehicle type, and location  
 
 ---
 
-## FR11 — Search Functionality
+## FR10 — Search Functionality
 The admin shall be able to **search violations** based on:
 - Vehicle number plate  
 
 ---
 
-## FR12 — Filter Functionality
+## FR11 — Filter Functionality
 The admin shall be able to **filter violations** based on:
 - Location  
 - Date/time range  
@@ -75,15 +75,15 @@ The admin shall be able to **filter violations** based on:
 
 ---
 
-## FR13 — View Violation Details
+## FR12 — View Violation Details
 The admin shall be able to **view detailed information** of a specific violation, including all metadata and snapshot.
 
 ---
 
-## FR14 — Delete Violation Records
+## FR13 — Delete Violation Records
 The admin shall be able to **delete** violation records from the database via the dashboard.
 
 ---
 
-## FR16 — User Authentication
+## FR14 — User Authentication
 The system shall require **login credentials** for admin access to the dashboard.
