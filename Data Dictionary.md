@@ -1,4 +1,4 @@
-# Data Dictionary — Intelligent Vehicle Violation Detection and Monitoring System
+# Data Dictionary — UnSafe Passenger Vehicle Detection System
 
 | **Field Name**           | **Type**       | **Size**       | **Description**                                              | **Example**           |
 |--------------------------|---------------|---------------|--------------------------------------------------------------|---------------------|
@@ -16,5 +16,5 @@
 | AdminPassword            | String        | 50            | Password used by admin to login                               | ••••••••            |
 | AdminSessionToken        | string        | 32            | JWT Token to authenticate the request is from admin           | sdjfhlskjdhflskjdhf |
 | FilterCriteria           | String / JSON | 100           | Criteria applied to filter violation records                 | {"Location":"City","Date":"2025-10-25"} |
-| SelectedViolationRecord  | JSON / Object | N/A           | Specific violation record selected by admin                  | N/A                 |
+| SelectedViolationRecord  | JSON  | N/A           | Specific violation record selected by admin                  | N/A                 |
 | DeletionConfirmed        | Boolean       | 1             | Flag indicating if deletion of violation record is confirmed | True                |
