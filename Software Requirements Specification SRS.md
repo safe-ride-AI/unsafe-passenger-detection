@@ -130,7 +130,7 @@ The system shall require **login credentials** for admin access to the dashboard
 
 ## 4. Non-Functional Requirements  
 
-- **Performance:** System must process video frames in near real-time (<1 second per frame).  
+- **Performance:** System must process video frames in near real-time .  
 - **Security:** All data transmissions must be encrypted; admin access must be authenticated.  
 - **Reliability:** System must ensure 99% uptime for monitoring critical areas.  
 - **Scalability:** System should handle multiple cameras simultaneously.  
