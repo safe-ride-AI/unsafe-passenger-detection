@@ -1,0 +1,37 @@
+###############################
+# SAFERIDE-AI - REQUIREMENTS
+###############################
+
+# --- CORE DEEP LEARNING ---
+torch
+torchvision
+torchaudio
+
+# --- YOLOv8 ---
+ultralytics==8.1.0
+
+# --- CLASSIFICATION MODEL ---
+efficientnet_pytorch
+
+# --- OCR ---
+easyocr
+
+# --- TRACKING (DeepSORT / ByteTrack) ---
+lapx
+filterpy
+scipy
+
+# --- COMPUTER VISION ---
+opencv-python
+Pillow
+numpy
+
+# --- UTILITIES ---
+matplotlib
+tqdm
+pandas
+pyyaml
+
+# --- NOTEBOOK SUPPORT ---
+ipykernel
+jupyter
