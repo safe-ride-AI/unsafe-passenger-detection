@@ -1,4 +1,5 @@
 ###############################
+<<<<<<< HEAD
 # SAFERIDE-AI - REQUIREMENTS
 ###############################
 
@@ -35,3 +36,97 @@ pyyaml
 # --- NOTEBOOK SUPPORT ---
 ipykernel
 jupyter
+=======
+# SafeRide AI - Requirements
+###############################
+
+# ============================
+# Core Deep Learning
+# ============================
+torch>=2.0.0
+torchvision>=0.15.0
+
+# torchaudio NOT needed (you do no audio)
+# torchaudio  ❌ REMOVED
+
+
+# ============================
+# Object Detection (YOLO)
+# ============================
+ultralytics>=8.1.0
+
+
+# ============================
+# Optional Classification Models
+# (Only keep if you ACTUALLY use EfficientNet)
+# ============================
+efficientnet_pytorch>=0.7.1
+
+
+# ============================
+# Tracking (SORT / DeepSORT / ByteTrack)
+# ============================
+filterpy>=1.4.5
+scipy>=1.10.0
+lap>=0.4.0          # Required for DeepSORT (correct package, NOT lapx)
+
+
+# ============================
+# OCR
+# ============================
+easyocr>=1.7.1
+
+
+# ============================
+# Computer Vision & Image Ops
+# ============================
+opencv-python>=4.8.0
+Pillow>=10.0.0
+numpy>=1.24.0
+
+
+# ============================
+# Backend (FastAPI)
+# ============================
+fastapi>=0.110.0
+uvicorn[standard]>=0.29.0
+python-multipart>=0.0.9     # For image/video uploads
+pydantic>=2.5.0
+
+
+# ============================
+# Async / Background Processing
+# ============================
+aiofiles>=23.2.1
+
+
+# ============================
+# Database (optional but recommended)
+# ============================
+sqlalchemy>=2.0.0
+psycopg2-binary>=2.9.9     # PostgreSQL (preferred)
+# sqlite3 comes with Python
+
+
+# ============================
+# Utilities & Monitoring
+# ============================
+tqdm>=4.66.0
+pyyaml>=6.0.1
+python-dotenv>=1.0.1
+loguru>=0.7.2
+
+
+# ============================
+# Analytics & Debugging
+# ============================
+pandas>=2.1.0
+matplotlib>=3.8.0
+
+
+# ============================
+# Development & Notebooks
+# ============================
+ipykernel>=6.29.0
+jupyter>=1.0.0
+>>>>>>> a4ade8c (intial commit)
