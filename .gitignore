@@ -87,5 +87,6 @@ htmlcov/
 # FastAPI / Uvicorn
 ##################################
 uvicorn.log
-
+data
+data/
 venv/
