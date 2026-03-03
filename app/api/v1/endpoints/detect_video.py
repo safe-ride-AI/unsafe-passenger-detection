@@ -12,11 +12,7 @@ def detect_video(
     video_source: str,
     background_tasks: BackgroundTasks
 ):
-    """
-    video_source:
-    - local file path
-    - OR RTSP URL
-    """
+   
     
 
     device = "cuda" if torch.cuda.is_available() else "cpu"
