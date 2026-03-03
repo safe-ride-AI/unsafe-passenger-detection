@@ -90,3 +90,4 @@ uvicorn.log
 data
 data/
 venv/
+test/
