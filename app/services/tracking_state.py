@@ -1,10 +1,9 @@
 class TrackStateManger:
     def __init__(self,max_missing_frames:int=30):
 
-            '''
-            max missing frames , 
-            number of frmae after which a track is removed if not seen again
-            '''
+            
+            ## max missing frames number of frmae after which a track is removed if not seen again
+            
 
             self.tracks = dict()
             self.max_missing_frames = max_missing_frames

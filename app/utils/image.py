@@ -18,17 +18,35 @@ def clamp_bbox(
 
     return x1,y1,x2,y2
 
+
+
+
 def crop_vehicle(
-        frame:np.ndarray,
-        bbox:Tuple[int,int,int,int]
-)-> np.ndarray:
+        frame: np.ndarray,
+        bbox: Tuple[int, int, int, int]
+) -> np.ndarray:
     
-    ### croping vechile from frame using bounding box
+    h, w = frame.shape[:2]
+    x1, y1, x2, y2 = bbox
 
-    h,w = frame.shape[:2]
-    x1,y1,x2,y2 = clamp_bbox(bbox,w,h)
+    # --- ADD EXTRA PADDING (20%) ---
+    box_width = x2 - x1
+    box_height = y2 - y1
 
-    return frame[y1:y2,x1:x2]
+    pad_w = int(box_width * 0.2)
+    pad_h = int(box_height * 0.2)
+
+    x1 -= pad_w
+    y1 -= pad_h
+    x2 += pad_w
+    y2 += pad_h
+    # --------------------------------
+
+    x1, y1, x2, y2 = clamp_bbox((x1, y1, x2, y2), w, h)
+
+    return frame[y1:y2, x1:x2]
+
+
 
 def resize_and_pad(
         image:np.ndarray,

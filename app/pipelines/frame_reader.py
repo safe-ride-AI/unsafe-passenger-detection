@@ -20,7 +20,6 @@ class VideoFrameReader:
         """
         this is frames function where i will return generator which save memory
         bcz list load entir list onto memory where generator return one by one
-
         generator[yeild,input,return]
         so we return tuple in yeild , and input none , final return none
         """

@@ -1,5 +1,3 @@
-# app/models/license_plate/lp_detector.py
-
 from ultralytics import YOLO
 import numpy as np
 
@@ -11,8 +9,8 @@ class LicensePlateDetector:
         device: str = "cpu",
         conf_threshold: float = 0.4
     ):
+        self.device = device
         self.model = YOLO(model_path)
-        self.model.to(device)
         self.conf_threshold = conf_threshold
 
     def detect(self, vehicle_crop: np.ndarray):
@@ -31,6 +29,7 @@ class LicensePlateDetector:
         results = self.model.predict(
             vehicle_crop,
             conf=self.conf_threshold,
+            device = self.device,
             verbose=False
         )
 
